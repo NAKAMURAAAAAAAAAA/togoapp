@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e1q-7z-yza">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="is5-kf-7li">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController storyboardIdentifier="toListViewController" id="gor-dx-4h0" customClass="ListViewController" customModule="togoapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nFe-hq-pC5">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="400" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jaO-Gt-gH4">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -30,14 +30,14 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qdc-M8-i6A">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vTt-d2-PAm">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="List" id="c9Z-tv-qpj">
-                                        <barButtonItem key="rightBarButtonItem" title="Add" id="ZNE-Oc-Wmc">
+                                    <navigationItem title="TOGOリスト" id="h81-4i-LHg">
+                                        <barButtonItem key="rightBarButtonItem" title="追加" id="aT2-xW-ZiK">
                                             <connections>
-                                                <segue destination="BYZ-38-t0r" kind="show" id="WSO-Yt-nfA"/>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="5rx-iP-qa3"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -61,7 +61,7 @@
             <objects>
                 <viewController storyboardIdentifier="toViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="togoapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fQn-87-wc4">
@@ -75,80 +75,88 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nb0-bX-syZ">
+                                        <rect key="frame" x="-4" y="4" width="70" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="multiply" catalog="system">
+                                            <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="gor-dx-4h0" kind="show" id="oLD-Ii-RdK"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qb2-tD-qCa">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Add" id="IzZ-uv-NXM">
-                                        <barButtonItem key="leftBarButtonItem" title="Add" image="chevron.left" catalog="system" id="tft-0d-vne">
-                                            <connections>
-                                                <segue destination="gor-dx-4h0" kind="show" id="mZV-Rs-vh4"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="LoF-56-yJX">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JeS-fv-A2s">
-                                                <rect key="frame" x="359" y="13" width="35" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Post"/>
-                                                <connections>
-                                                    <action selector="textField:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RXA-F2-k2i"/>
-                                                </connections>
-                                            </button>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Q6-bJ-LYs">
-                                <rect key="frame" x="187" y="472" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Q6-bJ-LYs">
+                                <rect key="frame" x="197" y="476" width="20" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="red"/>
+                                <color key="tintColor" red="0.88235294117647056" green="0.4392156862745098" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="circle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="RedColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mC0-rY-JNe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCI-h1-Sst">
-                                <rect key="frame" x="118" y="472" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCI-h1-Sst">
+                                <rect key="frame" x="124" y="476" width="20" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="blue"/>
+                                <color key="tintColor" red="0.40392156862745099" green="0.69803921568627447" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="circle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="BlueColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="45G-zK-odw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvt-Qg-QDs">
-                                <rect key="frame" x="42" y="472" width="40" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvt-Qg-QDs">
+                                <rect key="frame" x="51" y="469" width="30" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="green"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="0.49803921568627452" green="0.78823529411764703" blue="0.49411764705882355" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="circle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="BlueColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iy4-Y3-sR2"/>
                                     <action selector="GreenColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vKc-2f-DhA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNJ-Y3-oen">
-                                <rect key="frame" x="263" y="472" width="48" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Br6-jo-5QB">
+                                <rect key="frame" x="346" y="476" width="20" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="orange"/>
+                                <color key="tintColor" red="1" green="0.94901960784313721" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="BlueColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DY0-7G-IUw"/>
+                                    <action selector="YellowColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CQQ-td-6pj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNJ-Y3-oen">
+                                <rect key="frame" x="276" y="476" width="20" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.92156862745098034" green="0.70588235294117641" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" image="circle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="BlueColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GBa-dK-41l"/>
                                     <action selector="OrangeColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DRg-uV-Dce"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Br6-jo-5QB">
-                                <rect key="frame" x="342" y="472" width="43" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ysS-PC-D2J">
+                                <rect key="frame" x="76" y="552" width="263" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="yellow"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="投稿"/>
                                 <connections>
-                                    <action selector="BlueColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DY0-7G-IUw"/>
-                                    <action selector="YellowColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CQQ-td-6pj"/>
+                                    <action selector="PostButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ko-nA-TIe"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="r1P-Wu-jaR"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="eWt-nG-w8L"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="backgroudView" destination="fQn-87-wc4" id="G6W-Kk-K7g"/>
                         <outlet property="textField" destination="I07-4A-5xB" id="tg0-r6-Jsu"/>
@@ -163,33 +171,33 @@
             <objects>
                 <viewController id="e1q-7z-yza" customClass="SignupViewController" customModule="togoapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ztq-HJ-E6y">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ed9-L1-uzf">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="リスト名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ed9-L1-uzf">
                                 <rect key="frame" x="78" y="239" width="258" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xpR-b3-sye">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xpR-b3-sye">
                                 <rect key="frame" x="78" y="315" width="258" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duT-TM-RVA">
-                                <rect key="frame" x="183" y="380" width="48" height="30"/>
+                                <rect key="frame" x="125" y="380" width="165" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Signup"/>
+                                <state key="normal" title="　新規TOGOリスト作成"/>
                                 <connections>
                                     <action selector="willSignup:" destination="e1q-7z-yza" eventType="touchUpInside" id="xW9-gQ-hIS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64e-vP-SVU">
-                                <rect key="frame" x="188" y="418" width="38" height="30"/>
+                                <rect key="frame" x="140" y="788" width="150" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="TOGOリストログイン"/>
                                 <connections>
                                     <action selector="willTransitionToLogin:" destination="e1q-7z-yza" eventType="touchUpInside" id="Wbt-p2-mAp"/>
                                 </connections>
@@ -198,6 +206,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6y4-jX-gwN"/>
                     </view>
+                    <navigationItem key="navigationItem" id="IkU-bh-efP"/>
                     <connections>
                         <outlet property="emailTextField" destination="ed9-L1-uzf" id="nCC-RU-5ex"/>
                         <outlet property="passwordTextField" destination="xpR-b3-sye" id="C8X-5E-r3L"/>
@@ -207,30 +216,66 @@
             </objects>
             <point key="canvasLocation" x="1160.8695652173915" y="105.80357142857143"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="kWh-ww-pFP">
+            <objects>
+                <viewController id="is5-kf-7li" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WCt-Qx-jZO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXm-sr-BWh">
+                                <rect key="frame" x="77" y="397" width="261" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="TOGOリストログイン"/>
+                                <connections>
+                                    <segue destination="Shc-yo-7Sl" kind="show" id="mg2-BB-vVz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wne-C3-egv">
+                                <rect key="frame" x="132" y="470" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="新規TOGOリスト作成"/>
+                                <connections>
+                                    <segue destination="e1q-7z-yza" kind="show" id="gko-g9-RID"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="pSB-n6-3NY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KnM-gg-9Xo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="289.85507246376812" y="105.80357142857143"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="W4E-LW-wNw">
             <objects>
                 <viewController storyboardIdentifier="toLogin" id="Shc-yo-7Sl" customClass="LoginViewController" customModule="togoapp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nvJ-fW-yut">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z3g-Tg-VxJ">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="リスト名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z3g-Tg-VxJ">
                                 <rect key="frame" x="78" y="258" width="258" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QCy-Qz-RkC">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワード" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QCy-Qz-RkC">
                                 <rect key="frame" x="78" y="334" width="258" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfg-xc-Lxg">
-                                <rect key="frame" x="188" y="399" width="38" height="30"/>
+                                <rect key="frame" x="176" y="399" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="ログイン"/>
                                 <connections>
                                     <action selector="didRegisterUser:" destination="Shc-yo-7Sl" eventType="touchUpInside" id="uir-Fb-SWM"/>
                                 </connections>
@@ -239,6 +284,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Zvp-fk-gvM"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QI5-Gq-bwg"/>
                     <connections>
                         <outlet property="emailTextField" destination="Z3g-Tg-VxJ" id="ShY-no-MYh"/>
                         <outlet property="passwordTextField" destination="QCy-Qz-RkC" id="XLa-VP-eoA"/>
@@ -250,9 +296,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.left" catalog="system" width="48" height="64"/>
+        <image name="circle.fill" catalog="system" width="64" height="60"/>
+        <image name="multiply" catalog="system" width="64" height="54"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="mZV-Rs-vh4"/>
+        <segue reference="oLD-Ii-RdK"/>
     </inferredMetricsTieBreakers>
 </document>

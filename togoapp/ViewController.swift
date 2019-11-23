@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController, UITextFieldDelegate{
+    //背景色を準備
     @IBOutlet weak var backgroudView: UIView!
     //FirebaseDatabaseのルートを指定
     var ref: DatabaseReference!
@@ -24,10 +25,13 @@ class ViewController: UIViewController, UITextFieldDelegate{
         // Do any additional setup after loading the view.
         ref = Database.database().reference()
         textField.delegate = self //デリゲートをセット
+        
+        //背景色準備
+        backgroudView.backgroundColor = UIColor.init(red: 127/255, green: 201/255, blue: 126/255, alpha: 100/100)
     }
     
     //色
-    var color:String = "blue"
+    var color:String = "green"
     
     @IBAction func GreenColorButton(_ sender: Any) {
         color = "green"
@@ -56,11 +60,10 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     
     //Postボタン
-    @IBAction func textField(_ sender: Any) {
-    create()
-    transitionToListViewController()
+    @IBAction func PostButton(_ sender: Any) {
+        create()
+        transitionToListViewController()
     }
-    
     //リスト画面へ行く
     func transitionToListViewController()  {
         //まずは、同じstororyboard内であることをここで定義します
