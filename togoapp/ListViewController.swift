@@ -23,18 +23,9 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.read()
         table.delegate = self //デリゲートをセット
         table.dataSource = self //デリゲートをセット
-        table.dequeueReusableCell(withIdentifier: "Cell")
 
         // Do any additional setup after loading the view.
 
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-
-        //Cellの高さを調節
-        table.estimatedRowHeight = 56
-        table.rowHeight = UITableView.automaticDimension
     }
 
     override func viewDidDisappear(_ animated: Bool) {
@@ -62,29 +53,13 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell (
             withIdentifier: "Cell",
             for: indexPath as IndexPath)
+        //contetnArrayにitemを代入
         let item = contentArray[indexPath.row]
-        let content = item.value as! Dictionary<String, AnyObject>
-        cell.textLabel?.text = String(describing: content["content"]!)
+        //cell内に代入するものをfirebaseから持ってくる
+        let textlabel = item.value as! Dictionary<String, AnyObject>
+        //cell内に代入するものを決める
+        cell.textLabel?.text = String(describing: textlabel["content"]!)
         return cell
-        
-        
-        
-        
-        //xibとカスタムクラスで作成したCellのインスタンスを作成
-        /*let cell = table.dequeueReusableCell(withIdentifier: "ListCell") as! ListTableViewCell
-
-        //配列の該当のデータをitemという定数に代入
-        let item = contentArray[indexPath.row]
-        //itemの中身を辞書型に変換
-        let content = item.value as! Dictionary<String, AnyObject>
-        //contentという添字で保存していた投稿内容を表示
-        cell.contentLabel.text = String(describing: content["content"]!)
-        //dateという添字で保存していた投稿時間をtimeという定数に代入
-        let time = content["date"] as! TimeInterval
-        //getDate関数を使って、時間をtimestampから年月日に変換して表示
-        cell.postDateLabel.text = self.getDate(number: time/1000)
-
-        return cell*/
     }
     
     func read()  {
