@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>757197247379-5t95uvpgrfhol8aho5i1g5kbbfmi8p0l.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.757197247379-5t95uvpgrfhol8aho5i1g5kbbfmi8p0l</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCAL397E61XX_TZ1pD0cCoD80Nz1L1UNqs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>757197247379</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kan.nakamura0711-gmail.com.togoapp</string>
+	<key>PROJECT_ID</key>
+	<string>togoapp-7a52f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>togoapp-7a52f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:757197247379:ios:f7501c2cb88bc800014e66</string>
+	<key>DATABASE_URL</key>
+	<string>https://togoapp-7a52f.firebaseio.com</string>
+</dict>
+</plist>
