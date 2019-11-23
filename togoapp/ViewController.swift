@@ -24,6 +24,20 @@ class ViewController: UIViewController, UITextFieldDelegate{
         ref = Database.database().reference()
         textField.delegate = self //デリゲートをセット
     }
+    
+    //色
+    var color:String = "blue"
+    @IBAction func RedColorButton(_ sender: Any) {
+        color = "red"
+        
+    }
+    @IBAction func BlueColorButton(_ sender: Any) {
+        color = "blue"
+    }
+    
+    
+    
+    
     //Postボタン
     @IBAction func textField(_ sender: Any) {
     create()
@@ -56,9 +70,9 @@ class ViewController: UIViewController, UITextFieldDelegate{
         //setValueでデータを送信する。第一引数に送信したいデータを辞書型で入れる
         //今回は記入内容と一緒にユーザーIDと時間を入れる
         //FIRServerValue.timestamp()で現在時間を取る
-        self.ref.child((Auth.auth().currentUser?.uid)!).childByAutoId().setValue(["user": (Auth.auth().currentUser?.uid)!,"content": text, "date": ServerValue.timestamp()])
+        self.ref.child((Auth.auth().currentUser?.uid)!).childByAutoId().setValue(["user": (Auth.auth().currentUser?.uid)!,"content": text,"color": color, "date": ServerValue.timestamp()])
         //テスト表示
-        print("user\((Auth.auth().currentUser?.uid)!)content\(text)date\(ServerValue.timestamp())")
+        print("postを押したよ！user\((Auth.auth().currentUser?.uid)!)content\(text)date\(ServerValue.timestamp())color\(color)")
         
     }
     

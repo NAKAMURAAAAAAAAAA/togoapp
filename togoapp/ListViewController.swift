@@ -59,6 +59,18 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         let textlabel = item.value as! Dictionary<String, AnyObject>
         //cell内に代入するものを決める
         cell.textLabel?.text = String(describing: textlabel["content"]!)
+        
+        //テキストカラー
+        cell.textLabel?.textColor = UIColor.white
+        cell.textLabel?.textAlignment = NSTextAlignment.center
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 30)
+        //背景色
+        if String(describing: textlabel["color"]!) == "blue"{
+            cell.backgroundColor = UIColor.init(red: 103/255, green: 178/255, blue: 202/255, alpha: 90/100)
+        }else{
+            cell.backgroundColor = UIColor.init(red: 225/255, green: 112/255, blue: 230/255, alpha: 164/100)
+        }
+        
         return cell
     }
     
