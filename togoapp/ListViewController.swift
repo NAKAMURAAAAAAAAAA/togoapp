@@ -66,9 +66,15 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 30)
         //背景色
         if String(describing: textlabel["color"]!) == "blue"{
-            cell.backgroundColor = UIColor.init(red: 103/255, green: 178/255, blue: 202/255, alpha: 90/100)
+            cell.backgroundColor = UIColor.init(red: 103/255, green: 178/255, blue: 202/255, alpha: 100/100)
+        }else if String(describing: textlabel["color"]!) == "red"{
+            cell.backgroundColor = UIColor.init(red: 225/255, green: 112/255, blue: 230/255, alpha: 100/100)
+        }else if String(describing: textlabel["color"]!) == "orange"{
+            cell.backgroundColor = UIColor.init(red: 253/255, green: 180/255, blue: 108/255, alpha: 100/100)
+        }else if String(describing: textlabel["color"]!) == "green"{
+            cell.backgroundColor = UIColor.init(red: 127/255, green: 201/255, blue: 126/255, alpha: 100/100)
         }else{
-            cell.backgroundColor = UIColor.init(red: 225/255, green: 112/255, blue: 230/255, alpha: 164/100)
+            cell.backgroundColor = UIColor.init(red: 255/255, green: 242/255, blue: 123/255, alpha: 100/100)
         }
         
         return cell

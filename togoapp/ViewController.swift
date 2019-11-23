@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController, UITextFieldDelegate{
+    @IBOutlet weak var backgroudView: UIView!
     //FirebaseDatabaseのルートを指定
     var ref: DatabaseReference!
     
@@ -27,13 +28,29 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     //色
     var color:String = "blue"
+    
+    @IBAction func GreenColorButton(_ sender: Any) {
+        color = "green"
+        backgroudView.backgroundColor = UIColor.init(red: 127/255, green: 201/255, blue: 126/255, alpha: 100/100)
+        
+    }
     @IBAction func RedColorButton(_ sender: Any) {
         color = "red"
-        
+        backgroudView.backgroundColor = UIColor.init(red: 225/255, green: 112/255, blue: 230/255, alpha: 100/100)
     }
     @IBAction func BlueColorButton(_ sender: Any) {
         color = "blue"
+        backgroudView.backgroundColor = UIColor.init(red: 103/255, green: 178/255, blue: 202/255, alpha: 100/100)
     }
+    @IBAction func OrangeColorButton(_ sender: Any) {
+        color = "orange"
+        backgroudView.backgroundColor = UIColor.init(red: 253/255, green: 180/255, blue: 108/255, alpha: 100/100)
+    }
+    @IBAction func YellowColorButton(_ sender: Any) {
+        color = "yellow"
+        backgroudView.backgroundColor = UIColor.init(red: 255/255, green: 242/255, blue: 123/255, alpha: 100/100)
+    }
+    
     
     
     
