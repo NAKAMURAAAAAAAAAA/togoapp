@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet weak var LoginWarningLabel: UILabel!
     // Use Firebase library to configure APIs
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -56,6 +57,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                             self.transitionToView()
                     }
                 }else {
+                    self.LoginWarningLabel.text = error?.localizedDescription
                     print("error...\(error?.localizedDescription)")
                 }
             })

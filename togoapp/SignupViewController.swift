@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 
 class SignupViewController: UIViewController,UITextFieldDelegate {
+    @IBOutlet weak var WarningLabel: UILabel!
     //emailのテキストフィールド
     @IBOutlet weak var emailTextField: UITextField!
     //passwordのテキストフィールド
@@ -67,7 +68,6 @@ class SignupViewController: UIViewController,UITextFieldDelegate {
                         self.transitionToLogin()
                 print("登録できました")
                 }else {
-
                 print("\(error?.localizedDescription)")
             }
         })
