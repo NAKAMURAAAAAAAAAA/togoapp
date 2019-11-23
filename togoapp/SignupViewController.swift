@@ -35,7 +35,12 @@ class SignupViewController: UIViewController,UITextFieldDelegate {
     
     //ログイン画面への遷移
     func transitionToLogin() {
-        self.performSegue(withIdentifier: "toLogin", sender: self)
+        //まずは、同じstororyboard内であることをここで定義します
+        let storyboard: UIStoryboard = self.storyboard!
+        //ここで移動先のstoryboardを選択(今回の場合は先ほどsecondと名付けたのでそれを書きます)
+        let login = storyboard.instantiateViewController(withIdentifier: "toLogin")
+        //ここが実際に移動するコードとなります
+        self.present(login, animated: true, completion: nil)
     }
     //ListViewControllerへの遷移
     //まだstoryboardIDに"toView"つけてない
@@ -60,6 +65,7 @@ class SignupViewController: UIViewController,UITextFieldDelegate {
             if error == nil{
                         // エラーがない場合にはそのままログイン画面に飛び、ログインしてもらう
                         self.transitionToLogin()
+                print("登録できました")
                 }else {
 
                 print("\(error?.localizedDescription)")

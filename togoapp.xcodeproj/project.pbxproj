@@ -17,6 +17,7 @@
 		FAE6F9592388D97500EB1487 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAE6F9582388D97500EB1487 /* GoogleService-Info.plist */; };
 		FAE6F95B2388DB0A00EB1487 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6F95A2388DB0A00EB1487 /* SignupViewController.swift */; };
 		FAE6F95D2388DB1B00EB1487 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6F95C2388DB1B00EB1487 /* LoginViewController.swift */; };
+		FAE6F95F2388F4A100EB1487 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6F95E2388F4A100EB1487 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FAE6F9582388D97500EB1487 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAE6F95A2388DB0A00EB1487 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		FAE6F95C2388DB1B00EB1487 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FAE6F95E2388F4A100EB1487 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				FAE6F9462388D93C00EB1487 /* SceneDelegate.swift */,
 				FAE6F9482388D93C00EB1487 /* ViewController.swift */,
 				FAE6F95A2388DB0A00EB1487 /* SignupViewController.swift */,
+				FAE6F95E2388F4A100EB1487 /* ListViewController.swift */,
 				FAE6F95C2388DB1B00EB1487 /* LoginViewController.swift */,
 				FAE6F94A2388D93C00EB1487 /* Main.storyboard */,
 				FAE6F94D2388D94100EB1487 /* Assets.xcassets */,
@@ -218,6 +221,7 @@
 			files = (
 				FAE6F9492388D93C00EB1487 /* ViewController.swift in Sources */,
 				FAE6F9452388D93C00EB1487 /* AppDelegate.swift in Sources */,
+				FAE6F95F2388F4A100EB1487 /* ListViewController.swift in Sources */,
 				FAE6F95B2388DB0A00EB1487 /* SignupViewController.swift in Sources */,
 				FAE6F95D2388DB1B00EB1487 /* LoginViewController.swift in Sources */,
 				FAE6F9472388D93C00EB1487 /* SceneDelegate.swift in Sources */,
