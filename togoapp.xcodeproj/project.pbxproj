@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0FBEA151016C336813FE4818 /* Pods_togoapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3876EC8098518C139282DF04 /* Pods_togoapp.framework */; };
+		FA72534623894994006AA7A8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA72534523894994006AA7A8 /* Launch Screen.storyboard */; };
 		FAE6F9452388D93C00EB1487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6F9442388D93C00EB1487 /* AppDelegate.swift */; };
 		FAE6F9472388D93C00EB1487 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6F9462388D93C00EB1487 /* SceneDelegate.swift */; };
 		FAE6F9492388D93C00EB1487 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6F9482388D93C00EB1487 /* ViewController.swift */; };
 		FAE6F94C2388D93C00EB1487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE6F94A2388D93C00EB1487 /* Main.storyboard */; };
 		FAE6F94E2388D94100EB1487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE6F94D2388D94100EB1487 /* Assets.xcassets */; };
-		FAE6F9512388D94100EB1487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE6F94F2388D94100EB1487 /* LaunchScreen.storyboard */; };
 		FAE6F9592388D97500EB1487 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAE6F9582388D97500EB1487 /* GoogleService-Info.plist */; };
 		FAE6F95B2388DB0A00EB1487 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6F95A2388DB0A00EB1487 /* SignupViewController.swift */; };
 		FAE6F95D2388DB1B00EB1487 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE6F95C2388DB1B00EB1487 /* LoginViewController.swift */; };
@@ -24,13 +24,13 @@
 		09CD88063A2F67F131BA5676 /* Pods-togoapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-togoapp.debug.xcconfig"; path = "Target Support Files/Pods-togoapp/Pods-togoapp.debug.xcconfig"; sourceTree = "<group>"; };
 		3876EC8098518C139282DF04 /* Pods_togoapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_togoapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63ABD2CC1A6770ACF5A9CBEF /* Pods-togoapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-togoapp.release.xcconfig"; path = "Target Support Files/Pods-togoapp/Pods-togoapp.release.xcconfig"; sourceTree = "<group>"; };
+		FA72534523894994006AA7A8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		FAE6F9412388D93C00EB1487 /* togoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = togoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE6F9442388D93C00EB1487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE6F9462388D93C00EB1487 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FAE6F9482388D93C00EB1487 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAE6F94B2388D93C00EB1487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAE6F94D2388D94100EB1487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FAE6F9502388D94100EB1487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAE6F9522388D94100EB1487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAE6F9582388D97500EB1487 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAE6F95A2388DB0A00EB1487 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 				FAE6F95C2388DB1B00EB1487 /* LoginViewController.swift */,
 				FAE6F94A2388D93C00EB1487 /* Main.storyboard */,
 				FAE6F94D2388D94100EB1487 /* Assets.xcassets */,
-				FAE6F94F2388D94100EB1487 /* LaunchScreen.storyboard */,
+				FA72534523894994006AA7A8 /* Launch Screen.storyboard */,
 				FAE6F9582388D97500EB1487 /* GoogleService-Info.plist */,
 				FAE6F9522388D94100EB1487 /* Info.plist */,
 			);
@@ -163,9 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAE6F9512388D94100EB1487 /* LaunchScreen.storyboard in Resources */,
 				FAE6F9592388D97500EB1487 /* GoogleService-Info.plist in Resources */,
 				FAE6F94E2388D94100EB1487 /* Assets.xcassets in Resources */,
+				FA72534623894994006AA7A8 /* Launch Screen.storyboard in Resources */,
 				FAE6F94C2388D93C00EB1487 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,14 +237,6 @@
 				FAE6F94B2388D93C00EB1487 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FAE6F94F2388D94100EB1487 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAE6F9502388D94100EB1487 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
