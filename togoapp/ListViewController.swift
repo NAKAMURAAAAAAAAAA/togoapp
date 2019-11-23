@@ -95,6 +95,22 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    //スワイプ削除のメソッド
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+           //デリートボタンを追加
+           if editingStyle == .delete {
+               //選択されたCellのNSIndexPathを渡し、データをFirebase上から削除するためのメソッド
+               self.delete(deleteIndexPath: indexPath)
+               //TableView上から削除
+               table.deleteRows(at: [indexPath as IndexPath], with: .fade)
+           }
+       }
+    //delete関数
+    func delete(deleteIndexPath indexPath: IndexPath) {
+        ref.child((Auth.auth().currentUser?.uid)!).child(contentArray[indexPath.row].key).removeValue()
+        contentArray.remove(at: indexPath.row)
+    }
+    
     
     
     
