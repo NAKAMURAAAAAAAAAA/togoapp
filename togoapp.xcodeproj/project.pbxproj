@@ -25,7 +25,7 @@
 		3876EC8098518C139282DF04 /* Pods_togoapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_togoapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63ABD2CC1A6770ACF5A9CBEF /* Pods-togoapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-togoapp.release.xcconfig"; path = "Target Support Files/Pods-togoapp/Pods-togoapp.release.xcconfig"; sourceTree = "<group>"; };
 		FA72534523894994006AA7A8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		FAE6F9412388D93C00EB1487 /* togoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = togoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAE6F9412388D93C00EB1487 /* イキタイリスト.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "イキタイリスト.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE6F9442388D93C00EB1487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE6F9462388D93C00EB1487 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FAE6F9482388D93C00EB1487 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		FAE6F9422388D93C00EB1487 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAE6F9412388D93C00EB1487 /* togoapp.app */,
+				FAE6F9412388D93C00EB1487 /* イキタイリスト.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,7 +122,7 @@
 			);
 			name = togoapp;
 			productName = togoapp;
-			productReference = FAE6F9412388D93C00EB1487 /* togoapp.app */;
+			productReference = FAE6F9412388D93C00EB1487 /* イキタイリスト.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -368,8 +368,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "kan.nakamura0711-gmail.com.togoapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = kan.nakamura0711gmail.comtogoapp;
+				PRODUCT_NAME = "イキタイリスト";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -387,8 +387,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "kan.nakamura0711-gmail.com.togoapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = kan.nakamura0711gmail.comtogoapp;
+				PRODUCT_NAME = "イキタイリスト";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
